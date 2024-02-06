@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--- Tailwind CSS & Daisy UI CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.18.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <title>TO-DO</title>
+</head>
+<body>
+
+    
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <div class="alert-message"></div>
+            <div class="input-section">
+                <input type="text" placeholder="Add a todo . . ." class="my-custom-element"/>
+                <input type="date" class="my-custom-element schedule-date" />
+                <button class="btn  add-task-button">
+                    <i class="bx bx-plus bx-sm"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="todos-filter">
+        <button class="btn  delete-all-btn">
+                Delete All
+            </button>
+        </div>
+
+         <table style="width:100%" class="table">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="todos-list-body">
+            </tbody>
+        </table>
+
+    </div>
+
+    <footer>
+        <div class="author-text">
+            <p>&copy copyright reserved to <a href="" target="_blank"><b>Paritosh Kumar</b></a></p>
+        </div>
+    </footer>
+  
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
